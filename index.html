@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="game-body">
+        <h1 id="heading">Blackjack</h1>
+        <p class="name">Dealer</p>
+        <div class="card-space">
+            <div class="card-div-d">
+                <!-- <p class="card"></p> -->
+            </div>
+            <div class="card-div-p">
+                <!-- <h1>AH</h1> -->
+            </div>
+        </div>
+        <p class="name" id="overLine">Player</p>
+        <div class="all-btn">
+            <button class="game-btn" id="ht" onclick="hit()">Hit</button>
+            <button class="game-btn" id="std" onclick="stand()">Stand</button>
+            <button class="game-btn" id="strt" onclick="start()">Start Game</button>
+            <button class="game-btn" id="refh" onclick="refresh()">Restart</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
