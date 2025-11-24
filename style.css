@@ -80,4 +80,7 @@ body{
 #money{
     font-size: 20px;
     font-weight: bolder;
+    color: black;
+    padding: 2px 5px 2px 5px;
+    background-color: rgb(232, 93, 42);
 }
