@@ -68,6 +68,7 @@ function start(){
     if(playerScore>22 || dealerScore>22)findWinner();
 }
 const hed = document.getElementById('heading');
+const bkj = 'Blackjack'
 const won = "You Won!";
 const lost = "You Lost!";
 const tie = "Tie!";
@@ -90,9 +91,11 @@ function findWinner(){
     else if(flagWon){
         hed.textContent = won;
         pmoney += 25;
+        hed.style.color = 'skyblue'
     }
     else{
         hed.textContent = lost;
+        hed.style.color = 'maroon'
         pmoney -= 20;
     }
 
@@ -114,6 +117,8 @@ function refresh(){
         hed.textContent = nomoney;
         return;
     }
+    hed.textContent = bkj;
+    hed.style.color = 'goldenrod'
     document.querySelector('#refh').style.display = 'none'
     document.querySelector('#strt').style.display = 'block'
 }
